@@ -1,0 +1,120 @@
+.hidden { display: none; }
+
+.screen {
+  width: 100%;
+  max-width: 773px;
+  height: 480px;
+  background: no-repeat 0 0;
+  position: relative;
+  background-size: contain;
+}
+
+img {
+  border: 0;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+a {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#preload {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+#run a {
+  margin: 30% 0 0 50%;
+}
+
+#run img {
+  max-width: 100%;
+}
+
+#intro {
+  background-image: url(pics/alku.jpg);
+}
+
+#intro a {
+  margin: 40% 0 0 70%;
+}
+
+#intro img {
+  max-width: 100%;
+}
+
+#choice {
+  background-image: url(pics/pue.jpg);
+}
+
+#choice a.btn-no {
+  margin: 35% 0 0 70%;
+}
+
+#choice a.btn-yes {
+  margin: 50% 0 0 70%;
+}
+
+#no {
+  background-image: url(pics/havisit.jpg);
+}
+
+#no a {
+  margin: 50% 0 0 65%;
+}
+
+#no img {
+  max-width: 100%;
+}
+
+#yes {
+  background-image: url(pics/tulee.jpg);
+}
+
+#yes img {
+  transform: none;
+  width: 100%;
+  height: auto;
+  animation-duration: 1.7s;
+  animation-name: slidein;
+  animation-timing-function: linear;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+#done {
+  background-image: url(pics/kutittaa.jpg);
+  animation-duration: 0.4s;
+  animation-name: shake;
+  animation-timing-function: steps(3, end);
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { top: 0; left: 0; }
+  50% { top: 10; left: 10px; }
+  100% { top: -10px; left: -10px; }
+}
+
+#win {
+  background-image: url(pics/voitit.jpg);
+}
+
+#win a {
+  margin: 45% 0 0 65%;
+}
+
+#win img {
+  max-width: 100%;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Arkkitehdin villapaitapeli</title>
+	<script src="game.js"></script>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div id="loader">
+	Ladataan...
+</div>
+<div id="main" class="hidden">
+	<div class="screen" id="run">
+		<a href="#" data-goto="intro"><img src="pics/pelaa.jpg" alt="Pelaa Arkkitehdin villapaitapeliä"></a>
+	</div>
+
+	<div class="screen" id="intro">
+		<a href="#" data-goto="choice"><img src="pics/aloita.jpg" alt="Aloita"></a>
+	</div>
+
+	<div class="screen" id="choice">
+		<a href="#" data-goto="yes" class="btn-yes"><img src="pics/joo.jpg" alt="Kyllä"></a>
+		<a href="#" data-goto="no" class="btn-no"><img src="pics/en.jpg" alt="Ei"></a>
+	</div>
+
+	<div class="screen" id="yes">
+		<img src="pics/villapaita.png" alt="">
+	</div>
+
+	<div class="screen" id="done">
+	</div>
+
+	<div class="screen" id="win">
+		<a href="#" data-goto="intro"><img src="pics/uudelleen.jpg" alt="Uudelleen"></a>
+	</div>
+
+	<div class="screen" id="no">
+		<a href="#" data-goto="intro"><img src="pics/uudelleen.jpg" alt="Uudelleen"></a>
+	</div>
+</div>
+
+<div id="preload">
+	<img src="pics/alku.jpg" alt="">
+	<img src="pics/aloita.jpg" alt="">
+	<img src="pics/en.jpg" alt="">
+	<img src="pics/havisit.jpg" alt="">
+	<img src="pics/joo.jpg" alt="">
+	<img src="pics/kutittaa.jpg" alt="">
+	<img src="pics/pue.jpg" alt="">
+	<img src="pics/uudelleen.jpg" alt="">
+	<img src="pics/villapaita.png" alt="">
+	<img src="pics/voitit.jpg" alt="">
+
+</div>
+
+<audio src="sounds/villapaitapeli.mp3" id="villapaitapeli"></audio>
+<audio src="sounds/pue.mp3" id="pue"></audio>
+<audio src="sounds/hihi.mp3" id="hihi"></audio>
+<audio src="sounds/voitit.mp3" id="voitit"></audio>
+<audio src="sounds/havisit.mp3" id="havisit"></audio>
+</body>
+</html>
